@@ -4,7 +4,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <header class="header">
+      <h3>What's for Dinner?</h3>
+      <button class="add-recipe-button" type="button" name="add-recipe">ADD A RECIPE</button>
+    </header>
+    <style>
+    body {
+      min-height: 100%;
+      background-image:url(/Users/bryanhohn/whats-for-dinner/assets/burger-friends.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      }
+    </style>
+    <p>What are you looking for?*</p>
+    <div class="radios">
+      <input class="radio-1" type= "radio" id="Side" name="dishes" value="side"
+      <label class="radio-label"for="side">Side</label> <br>
+    </div>
+    <div>
+      <input class="radio-2" type="radio" id="Main Dish" name="dishes" value="Main Dish"
+      <label class="radio-label"for="Main Dish">Main Dish</label> <br>
+    </div>
+    <div>
+      <input class="radio-3" type="radio" id="Dessert" name="dishes" value="Dessert"
+      <label class="radio-label"for="Dessert">Dessert</label> <br>
+    </div>
+    <div>
+      <input class="radio-4" type="radio" id="Entire Meal" name="dishes" value="Entire Meal"
+      <label class="radio-label for="Entire Meal">Entire Meal</label> <br>
+    </div>
+    <button type="button">LET'S COOK!</button>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
