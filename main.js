@@ -1,5 +1,12 @@
-
-
+// var letsCookButton = document.querySelector();
+// var radioButtonOne = document.querySelector();
+// var radioButtonTwo = document.querySelector();
+// var radioButtonThree = document.querySelector();
+// var radioButtonFour = document.querySelector();
+// var addRecpie = document.querySelector();
+//
+// letsCookButton.addEventListener('click')
+// radioButtonOne.addEventListener('click')
 
 //
 // var sides =['Miso Glazed Carrots', 'Coleslaw', 'Garden Salad', 'Crispy Potatoes',
