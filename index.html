@@ -4,38 +4,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <h3>What's for Dinner?</h3>
+    <header class="header">What's for Dinner?</h1>
       <button id="addRecipeButton" class="buttons" type="button" name="add-recipe">ADD A RECIPE</button>
     </header>
-    <form id="dinnerForm" class="boxes">
-      <section id="dinnerOptions">
-    <p>What are you looking for?*</p>
+    <div class="flex-box">
+    <section id="box1" class="boxes">
+      <h2 class="box1-lead">What are you looking for?<span class= "required">*</span> </h2>
+      <p class="required"<*</p>
     <div class="radios">
-      <input class="radio-1" type= "radio" id="Side" name="dishes" value="side"
+      <div>
+      <input class="radios" type= "radio" id="Side" name="dishes" value="side"
       <label class="radio-label"for="side">Side</label>
     </div>
     <br>
     <div>
-      <input class="radio-2" type="radio" id="Main Dish" name="dishes" value="Main Dish"
+      <input class="radios" type="radio" id="Main Dish" name="dishes" value="Main Dish"
       <label class="radio-label"for="Main Dish">Main Dish</label>
     </div>
     <br>
     <div>
-      <input class="radio-3" type="radio" id="Dessert" name="dishes" value="Dessert"
+      <input class="radios" type="radio" id="Dessert" name="dishes" value="Dessert"
       <label class="radio-label"for="Dessert">Dessert</label>
     </div>
     <br>
     <div>
-      <input class="radio-4" type="radio" id="Entire Meal" name="dishes" value="Entire Meal"
-      <label class="radio-label for="Entire Meal">Entire Meal</label>
+      <input class="radios" type="radio" id="Entire Meal" name="dishes" value="Entire Meal"
+      <label class="radio-label" for="Entire Meal">Entire Meal</label>
     </div>
     <br>
     <button class="lets-cook-button" type="button">LET'S COOK!</button>
-   </section>
-  </form>
-  <section class="boxes" id="box2">
+  </section>
+  <section id="box2" class="boxes">
+    <div id="titleDisplay" hidden = true>
+      <h3 id="opener">You should make:</h3>
+    </div>
+    <div id"recipeDisplay">
     <img class="cookpot" src="assets/cookpot.svg" alt="Pot icon">
+  </div>
   </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
