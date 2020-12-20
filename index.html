@@ -13,33 +13,35 @@
       <p class="required"<*</p>
     <div class="radios">
       <div>
-      <input class="radios" type= "radio" id="Side" name="dishes" value="side"
+      <input class="selection" type= "radio" id="Side" name="dishes" value="side"
       <label class="radio-label"for="side">Side</label>
     </div>
     <br>
     <div>
-      <input class="radios" type="radio" id="Main Dish" name="dishes" value="Main Dish"
+      <input class="selection" type="radio" id="Main Dish" name="dishes" value="Main Dish"
       <label class="radio-label"for="Main Dish">Main Dish</label>
     </div>
     <br>
     <div>
-      <input class="radios" type="radio" id="Dessert" name="dishes" value="Dessert"
+      <input class="selection" type="radio" id="Dessert" name="dishes" value="Dessert"
       <label class="radio-label"for="Dessert">Dessert</label>
     </div>
     <br>
     <div>
-      <input class="radios" type="radio" id="Entire Meal" name="dishes" value="Entire Meal"
+      <input class="selection" type="radio" id="Entire Meal" name="dishes" value="Entire Meal"
       <label class="radio-label" for="Entire Meal">Entire Meal</label>
     </div>
     <br>
     <button class="lets-cook-button" type="button">LET'S COOK!</button>
   </section>
   <section id="box2" class="boxes">
-    <div id="titleDisplay" hidden = true>
-      <h3 id="opener">You should make:</h3>
+    <div class="results">
+      <h2 id="opener"><i>You should make:</i></h2>
+      <p id="food-text"></p>
     </div>
-    <div id"recipeDisplay">
-    <img class="cookpot" src="assets/cookpot.svg" alt="Pot icon">
+    <div class="cookpotdisplay">
+      <div class="cookpot">
+    <img src="assets/cookpot.svg" alt="Pot icon"/>
   </div>
   </section>
   </body>
