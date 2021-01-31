@@ -2,10 +2,11 @@ var letsCookButton = document.querySelector('.lets-cook-button');
 var sideButton = document.getElementById('Side');
 var mainButton = document.getElementById('Main Dish');
 var dessertButton = document.getElementById('Dessert');
-var entireMealButton = document.getElementById('Entire Meal');
+var entireMealButton = document.getElementById('Entire');
 var cookpotBox = document.querySelector('.cookpot');
 var foodResults = document.querySelector('.foodResults');
 var foodText = document.getElementById('food-text');
+
 
 var sides = ['Miso Glazed Carrots', 'Coleslaw', 'Garden Salad', 'Crispy Potatoes','Sweet Potato Tots', 'Coconut Rice', 'Caesar Salad', 'Shrimp Summer Rolls', 'Garlic Butter Mushrooms', 'Hush Puppies']
 var mains = ['Spaghetti and Meatballs', 'Pineapple Chicken', 'Shakshuka', 'Thai Yellow Curry', 'Bibimbap', 'Chicken Parmesean', 'Butternut Squash Soup', 'BBQ Chicken Burgers', 'Ramen', 'Empanadas', 'Chicken Fried Rice', 'Sheet Pan Fajitas', 'Margarita Pizza']
@@ -17,7 +18,7 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-function clearDisplay() {
+function toggleCookpotImage() {
   foodResults.hidden = false;
   cookpotBox.hidden = true;
 }
@@ -25,15 +26,15 @@ function clearDisplay() {
 function showFoodOptions() {
   if (sideButton.checked)  {
     foodText.innerText = `${sides[getRandomIndex(sides)]}!`
-    clearDisplay()
+    toggleCookpotImage()
   } else if (mainButton.checked) {
     foodText.innerText =`${mains[getRandomIndex(mains)]}!`
-    clearDisplay()
+    toggleCookpotImage()
   } else if (dessertButton.checked) {
     foodText.innerText =`${dessert[getRandomIndex(dessert)]}!`
-    clearDisplay()
+    toggleCookpotImage()
   } else if (entireMealButton.checked) {
     foodText.innerText =`${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${dessert[getRandomIndex(dessert)]} for dessert!`
-    clearDisplay()
+    toggleCookpotImage()
   }
 }
